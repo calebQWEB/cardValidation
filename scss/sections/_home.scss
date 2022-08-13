@@ -1,6 +1,7 @@
 @use '../custom'as *;
 
 main {
+   height: 100%;
 
     .container {
         position: relative;
@@ -10,7 +11,7 @@ main {
 
         .desktop-background {
             width: 30%;
-            height: 100%;
+            height: 100vh;
         }
 
         .mobile-background {
@@ -21,7 +22,7 @@ main {
 
             .back {
                 position: absolute;
-                top: 42%;
+                top: 48%;
                 left: 20%;
 
                 .cvc {
@@ -38,7 +39,7 @@ main {
 
             .front {
                 position: absolute;
-                top: 8%;
+                top: 5%;
                 left: 10%;
 
                 .card-front {
@@ -356,20 +357,20 @@ main {
                         position: absolute;
                         top: 40%;
                         left: 5%;
-    
-    
+
+
                         .card-number {
                             font-size: 20px;
                         }
-    
+
                         .name-date {
                             gap: 8rem;
-    
+
                             .card-name {
                                 color: $White;
                                 font-size: 15px;
                             }
-    
+
                             .card-date {
                                 color: $White;
                             }
@@ -382,7 +383,7 @@ main {
             // FORM
             form {
                 margin-top: 3rem;
-            
+
                 input {
                     width: 100%;
                     padding: 0.5rem;
@@ -444,20 +445,20 @@ main {
                         position: absolute;
                         top: 28%;
                         left: 5%;
-    
-    
+
+
                         .card-number {
                             font-size: 20px;
                         }
-    
+
                         .name-date {
                             gap: 5rem;
-    
+
                             .card-name {
                                 color: $White;
                                 font-size: 15px;
                             }
-    
+
                             .card-date {
                                 color: $White;
                                 font-size: 13px;
@@ -470,7 +471,7 @@ main {
 
             // FORM
             form {
-            
+
                 input {
                     width: 100%;
                     padding: 0.5rem;
@@ -508,7 +509,7 @@ main {
         .container {
 
             .card-container {
-                
+
 
                 .back {
                     position: absolute;
@@ -537,21 +538,21 @@ main {
                         position: absolute;
                         top: 28%;
                         left: 5%;
-    
-    
+
+
                         .card-number {
                             font-size: 20px;
                             letter-spacing: 1px;
                         }
-    
+
                         .name-date {
                             gap: 4rem;
-    
+
                             .card-name {
                                 color: $White;
                                 font-size: 14px;
                             }
-    
+
                             .card-date {
                                 color: $White;
                                 font-size: 12px;
@@ -565,7 +566,7 @@ main {
             // FORM
             form {
                 margin: 0;
-            
+
                 input {
                     width: 100%;
                     padding: 0.5rem;
@@ -598,5 +599,3 @@ main {
         }
     }
 }
-
-
