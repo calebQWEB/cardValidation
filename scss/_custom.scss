@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+
+// COLORS
+
+// primary
+// $Lineargradient:  hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+// $border-input: linear-gradient(hsl(249, 99%, 64%),hsl(278, 94%, 30%));
+$linear-input: linear-gradient( hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+$input-border: hsl(249, 99%, 64%);
+$viole: hsl(278, 94%, 30%);
+$lightred: hsl(0, 100%, 66%);
+
+
+// neutrals 
+$White: hsl(0, 0%, 100%);
+$Lightgrayishviolet: hsl(270, 3%, 87%);
+$Darkgrayishviolet: hsl(279, 6%, 55%);
+$Verydarkviolet: hsl(278, 68%, 11%);

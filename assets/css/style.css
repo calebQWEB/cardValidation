@@ -1,0 +1,402 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+main .container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+}
+main .container .desktop-background {
+  width: 30%;
+  height: 100%;
+}
+main .container .mobile-background {
+  display: none;
+}
+main .container .card-container .back {
+  position: absolute;
+  top: 42%;
+  left: 20%;
+}
+main .container .card-container .back .cvc {
+  position: absolute;
+  top: 43%;
+  right: 12%;
+  color: hsl(0deg, 0%, 100%);
+}
+main .container .card-container .back .card-back {
+  box-shadow: rgba(17, 12, 46, 0.2) 0px 48px 100px 0px;
+}
+main .container .card-container .front {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+main .container .card-container .front .card-front {
+  box-shadow: rgba(17, 12, 46, 0.2) 0px 48px 100px 0px;
+}
+main .container .card-container .front .logo {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+main .container .card-container .front .card-details {
+  position: absolute;
+  top: 48%;
+  left: 5%;
+}
+main .container .card-container .front .card-details .card-number {
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  line-height: 3.5rem;
+  color: hsl(0deg, 0%, 100%);
+}
+main .container .card-container .front .card-details .name-date {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+}
+main .container .card-container .front .card-details .name-date .card-name {
+  color: hsl(0deg, 0%, 100%);
+}
+main .container .card-container .front .card-details .name-date .card-date {
+  color: hsl(0deg, 0%, 100%);
+}
+main .container form {
+  margin-bottom: 7rem;
+}
+main .container form label {
+  display: block;
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  padding-bottom: 0.5rem;
+  color: hsl(278deg, 68%, 11%);
+}
+main .container form .err-msg {
+  visibility: hidden;
+  display: block;
+  margin-bottom: 2rem;
+  color: hsl(0deg, 100%, 66%);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+main .container form input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 0;
+  outline: 1px solid hsl(270deg, 3%, 87%);
+}
+main .container form input::placeholder {
+  color: hsl(270deg, 3%, 87%);
+  font-weight: 500;
+  font-size: 18px;
+}
+main .container form input:focus {
+  outline-color: hsl(249deg, 99%, 64%);
+}
+main .container form .form-flex {
+  display: flex;
+}
+main .container form .form-flex .flex-input {
+  width: 100px;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+main .container form .form-flex .form-cvc .cvc-input {
+  width: 300px;
+  margin-left: 0.5rem;
+}
+main .container form .submit-button {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 10px;
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 600;
+  background-color: hsl(278deg, 68%, 11%);
+  cursor: pointer;
+}
+main .container form .submit-button:hover {
+  border: 2px solid hsl(278deg, 68%, 11%);
+  background: transparent;
+  color: hsl(278deg, 68%, 11%);
+}
+main .container .appreciation {
+  text-align: center;
+  margin-bottom: 7rem;
+  margin-left: 5rem;
+  display: none;
+}
+main .container .appreciation .complete {
+  margin-bottom: 1rem;
+}
+main .container .appreciation h1 {
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  color: hsl(278deg, 68%, 11%);
+}
+main .container .appreciation p {
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+  font-size: 18px;
+  font-weight: 600;
+  color: hsl(279deg, 6%, 55%);
+}
+main .container .appreciation button {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 10px;
+  font-weight: 600;
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(278deg, 68%, 11%);
+  cursor: pointer;
+}
+main .container .appreciation button:hover {
+  border: 2px solid hsl(278deg, 68%, 11%);
+  background: transparent;
+  color: hsl(278deg, 68%, 11%);
+}
+
+@media (max-width: 1240px) {
+  main .container {
+    flex-direction: column;
+    gap: 5rem;
+  }
+  main .container .desktop-background {
+    display: none;
+  }
+  main .container .mobile-background {
+    display: block;
+    width: 100%;
+    height: 350px;
+  }
+  main .container .card-container .back {
+    position: absolute;
+    top: 5%;
+    left: 35%;
+  }
+  main .container .card-container .front {
+    position: absolute;
+    top: 18%;
+    left: 20%;
+  }
+}
+@media (max-width: 830px) {
+  main .container .card-container .back {
+    position: absolute;
+    top: 5%;
+    left: 30%;
+  }
+  main .container .card-container .front {
+    position: absolute;
+    top: 18%;
+    left: 15%;
+  }
+}
+@media (max-width: 710px) {
+  main .container .card-container .back {
+    position: absolute;
+    top: 5%;
+    left: 25%;
+  }
+  main .container .card-container .front {
+    position: absolute;
+    top: 18%;
+    left: 10%;
+  }
+}
+@media (max-width: 660px) {
+  main .container .card-container .back {
+    position: absolute;
+    top: 5%;
+    left: 18%;
+  }
+  main .container .card-container .back .card-back {
+    width: 100%;
+  }
+  main .container .card-container .front {
+    position: absolute;
+    top: 18%;
+    left: 8%;
+  }
+  main .container .card-container .front .card-front {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  main .container .card-container .back {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+  }
+  main .container .card-container .back .card-back {
+    width: 350px;
+  }
+  main .container .card-container .front {
+    position: absolute;
+    top: 30%;
+    left: 4%;
+  }
+  main .container .card-container .front .card-front {
+    width: 350px;
+  }
+  main .container .card-container .front .card-details {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+  }
+  main .container .card-container .front .card-details .card-number {
+    font-size: 20px;
+  }
+  main .container .card-container .front .card-details .name-date {
+    gap: 8rem;
+  }
+  main .container .card-container .front .card-details .name-date .card-name {
+    color: hsl(0deg, 0%, 100%);
+    font-size: 15px;
+  }
+  main .container .card-container .front .card-details .name-date .card-date {
+    color: hsl(0deg, 0%, 100%);
+  }
+  main .container form {
+    margin-top: 3rem;
+  }
+  main .container form input {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 0;
+    outline: 1px solid hsl(270deg, 3%, 87%);
+  }
+  main .container form .form-flex .form-cvc .cvc-input {
+    width: 150px;
+    margin-left: 0.5rem;
+  }
+  main .container .appreciation {
+    margin: 0;
+  }
+}
+@media (max-width: 450px) {
+  main .container .card-container .back {
+    position: absolute;
+    top: 15%;
+    left: 18%;
+  }
+  main .container .card-container .back .card-back {
+    width: 300px;
+  }
+  main .container .card-container .front {
+    position: absolute;
+    top: 30%;
+    left: 4%;
+  }
+  main .container .card-container .front .card-front {
+    width: 300px;
+  }
+  main .container .card-container .front .card-details {
+    position: absolute;
+    top: 28%;
+    left: 5%;
+  }
+  main .container .card-container .front .card-details .card-number {
+    font-size: 20px;
+  }
+  main .container .card-container .front .card-details .name-date {
+    gap: 5rem;
+  }
+  main .container .card-container .front .card-details .name-date .card-name {
+    color: hsl(0deg, 0%, 100%);
+    font-size: 15px;
+  }
+  main .container .card-container .front .card-details .name-date .card-date {
+    color: hsl(0deg, 0%, 100%);
+    font-size: 13px;
+  }
+  main .container form input {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 0;
+    outline: 1px solid hsl(270deg, 3%, 87%);
+  }
+  main .container form .form-flex .form-cvc .cvc-input {
+    width: 150px;
+    margin-left: 0.5rem;
+  }
+  main .container .appreciation {
+    margin: 0;
+  }
+}
+@media (max-width: 400px) {
+  main .container .card-container .back {
+    position: absolute;
+    top: 15%;
+    left: 20%;
+  }
+  main .container .card-container .back .card-back {
+    width: 280px;
+  }
+  main .container .card-container .back .cvc {
+    font-size: 13px;
+  }
+  main .container .card-container .front {
+    position: absolute;
+    top: 25%;
+    left: 4%;
+  }
+  main .container .card-container .front .card-front {
+    width: 280px;
+  }
+  main .container .card-container .front .card-details {
+    position: absolute;
+    top: 28%;
+    left: 5%;
+  }
+  main .container .card-container .front .card-details .card-number {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+  main .container .card-container .front .card-details .name-date {
+    gap: 4rem;
+  }
+  main .container .card-container .front .card-details .name-date .card-name {
+    color: hsl(0deg, 0%, 100%);
+    font-size: 14px;
+  }
+  main .container .card-container .front .card-details .name-date .card-date {
+    color: hsl(0deg, 0%, 100%);
+    font-size: 12px;
+  }
+  main .container form {
+    margin: 0;
+  }
+  main .container form input {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 0;
+    outline: 1px solid hsl(270deg, 3%, 87%);
+  }
+  main .container form .form-flex .flex-input {
+    width: 80px;
+  }
+  main .container form .form-flex .form-cvc .cvc-input {
+    width: 130px;
+    margin-left: 0.5rem;
+  }
+  main .container .appreciation {
+    margin-bottom: 7rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
